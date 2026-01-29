@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중간3</title>
+    <style>
+      body {
+        background-color: #f6f7fb;
+      }
+
+      .all {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .fieldset-top {
+        background-color: white;
+        width: 320px;
+        height: 300px;
+        margin-top: 10%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        border: 1px ridge #e5e7eb;
+        border-radius: 16px;
+      }
+
+      .justify-content-space-between {
+        background-color: white;
+        width: 500px;
+        height: 100px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .justify-content-space-between > img {
+        width: 100px;
+        height: 30px;
+      }
+
+      .justify-content-space-between > div {
+        background-color: white;
+        font-size: small;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+      }
+
+      .fieldset-top > .font-head {
+        display: flex;
+        margin-left: 5%;
+        margin-top: 20px;
+      }
+
+      .font {
+        width: 300px;
+        height: 80px;
+        font-size: medium;
+      }
+
+      .font-head {
+        width: 300px;
+        height: 60px;
+      }
+
+      .font > mark {
+        background-color: white;
+        font-weight: bold;
+      }
+
+      .font > div {
+        color: #6b7280;
+      }
+
+      /*  */
+
+      main {
+        background-color: #e6e6ea;
+        width: 100%;
+        height: 100px;
+        margin-top: 30%;
+      }
+
+      .foot-between {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .foot-font {
+        margin-top: 30px;
+      }
+
+      .foot-font1 {
+        margin-top: 30px;
+      }
+      .foot-font > mark {
+        background-color: lightsteelblue;
+        font-weight: bold;
+        font-size: large;
+      }
+
+      .foot-between > img {
+        margin-right: 10px;
+      }
+
+      .input-w {
+        width: 300px;
+        height: 100px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .input-w > .butt > input {
+        background-color: #ff2d2e;
+        color: white;
+        width: 150px;
+        height: 30px;
+        border-radius: 8px;
+        border: 1px;
+      }
+
+      /* .butt {
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="all">
+      <div class="fieldset-top">
+        <div class="justify-content-space-between">
+          <img src="./img/pass인증로고.png" />
+
+          <div>
+            인증을넘어 <br />
+            일상속으로 Pass
+          </div>
+        </div>
+
+        <div class="font-head">
+          <div class="font">
+            <mark>PASS 앱 알림을 확인하고</mark>
+            <div>인증을 진행해주세요</div>
+          </div>
+        </div>
+
+        <div class="input-w">
+          <div>PASS 인증을 요청했어요</div>
+          <div class="butt"><input type="button" value="인증완료" /></div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div>
+        <div class="foot-between">
+          <div class="foot-font">
+            이용약관 <mark>개인정보처리방침</mark> API 도입문의 <br />
+            verisign 256-bit SSL 암호와 적용
+          </div>
+
+          <div class="foot-font1">
+            <img src="./img/hyundai-symbol.png" width="60px" />현대아파트
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
